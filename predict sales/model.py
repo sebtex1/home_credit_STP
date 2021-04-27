@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import pickle
 
-dataset = pd.read_csv('application_train.csv')
+dataset = pd.read_csv('../individu_test.csv')
 
 dataset['rate'].fillna(0, inplace=True)
 

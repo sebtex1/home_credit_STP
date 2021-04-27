@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Machine Learn</title>
+  <title>Home credit</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -13,16 +13,24 @@
 
 <body style="background: #000;">
  <div class="login">
-	<h1>Sales Forecasting</h1>
+	<h1>Le client va t'il payer ?</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="rate" placeholder="rate" required="required" />
-        <input type="text" name="sales in first month" placeholder="sales in first month" required="required" />
-		<input type="text" name="sales in second month" placeholder="sales in second month" required="required" />
-
-
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict sales in third month</button>
+    	<input type="text" name="NAME_CONTRACT_TYPE" placeholder="Name contract type" />
+      <input type="text" name="CODE_GENDER" placeholder="Code gender" />
+      <input type="text" name="FLAG_OWN_CAR" placeholder="Flag own car" />
+      <input type="text" name="FLAG_OWN_REALTY" placeholder="Flag own realty" />
+      <input type="text" name="CNT_CHILDREN" placeholder="CNT children" />
+      <input type="text" name="AMT_INCOME_TOTAL" placeholder="AMT income total" />
+      <input type="text" name="AMT_CREDIT" placeholder="AMT credit" />
+      <input type="text" name="NAME_TYPE_SUITE" placeholder="Name type suite" />
+      <input type="text" name="NAME_INCOME_TYPE" placeholder="Name income type" />
+      <input type="text" name="NAME_EDUCATION_TYPE" placeholder="Name education type" />
+      <input type="text" name="NAME_FAMILY_STATUS" placeholder="Name family status" />
+      <input type="text" name="NAME_HOUSING_TYPE" placeholder="Name housing type" />
+      
+      <button type="submit" class="btn btn-primary btn-block btn-large">Prédire le client</button>
     </form>
 
    <br>
