@@ -13,7 +13,7 @@
 
 <body style="background: #000;">
  <div class="login">
-	<h1>Le client va t'il payer ?</h1>
+	<h1>Prédiction de client</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
@@ -32,10 +32,6 @@
       
       <button type="submit" class="btn btn-primary btn-block btn-large">Prédire le client</button>
     </form>
-
-   <br>
-   <br>
-   {{ prediction_text }}
 
  </div>
 
